@@ -26,24 +26,29 @@ export const routes: Routes = [
                 loadComponent:()=>import('./dashboard/pages/defer-views/defer-views.component')
             },
             {
-                path:'user',
-                title:'User',
+                path:'user/:id',
+                title:'User Vies',
                 loadComponent:()=>import('./dashboard/pages/user/user.component')
             },
             {
-                path:'users',
-                title:'Users',
+                path:'users-list',
+                title:'Users List',
                 loadComponent:()=>import('./dashboard/pages/users/users.component')
             },
             {
                 path:'view-transition',
                 title:'View Transition',
                 loadComponent:()=>import('./dashboard/pages/view-transition/view-transition.component')
+            },
+            {
+                path:'',
+                redirectTo:'control-flow',
+                pathMatch:'full'
             }
         ]
     },
     {
-        path:'',
+        path:'**',
         redirectTo:'/dashboard',
         pathMatch:'full'
     }
