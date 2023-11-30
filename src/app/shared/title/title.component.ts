@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   template: `
-    <h1 class="text-3xl mb-5" >{{title}} - {{withShawdown}}</h1>
+    <h1 class="text-3xl mb-5" >{{title}}</h1>
   `,
   styleUrl: './title.component.css'
 })
